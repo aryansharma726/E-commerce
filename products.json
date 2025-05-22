@@ -1,0 +1,716 @@
+[
+    {
+      "id": "p-001",
+      "name": "Classic Blue Denim Jeans",
+      "price": 45.99,
+      "description": "Comfortable and durable classic fit blue denim jeans. Ideal for everyday wear.",
+      "category": "Clothing"
+    },
+    {
+      "id": "p-002",
+      "name": "Organic Cotton T-Shirt - White",
+      "price": 18.50,
+      "description": "Soft and breathable t-shirt made from 100% organic cotton.",
+      "category": "Clothing"
+    },
+    {
+      "id": "p-003",
+      "name": "Running Shoes - Lightweight",
+      "price": 89.00,
+      "description": "Lightweight running shoes designed for speed and comfort.",
+      "category": "Footwear"
+    },
+    {
+      "id": "p-004",
+      "name": "Leather Wallet - Brown",
+      "price": 35.00,
+      "description": "Genuine leather wallet with multiple card slots and a coin pocket.",
+      "category": "Accessories"
+    },
+    {
+      "id": "p-005",
+      "name": "Noise Cancelling Headphones",
+      "price": 150.00,
+      "description": "Over-ear headphones with active noise cancellation and long battery life.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-006",
+      "name": "Smartwatch with Fitness Tracker",
+      "price": 120.00,
+      "description": "Track your steps, heart rate, and notifications with this sleek smartwatch.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-007",
+      "name": "Yoga Mat - Non-Slip",
+      "price": 29.95,
+      "description": "Eco-friendly, non-slip yoga mat for all your practice needs.",
+      "category": "Fitness"
+    },
+    {
+      "id": "p-008",
+      "name": "Stainless Steel Water Bottle",
+      "price": 25.00,
+      "description": "Keep your drinks cold for 24 hours or hot for 12 hours.",
+      "category": "Home & Kitchen"
+    },
+    {
+      "id": "p-009",
+      "name": "Mystery Thriller Novel",
+      "price": 14.99,
+      "description": "A gripping mystery novel that will keep you on the edge of your seat.",
+      "category": "Books"
+    },
+    {
+      "id": "p-010",
+      "name": "Desk Lamp - LED Adjustable",
+      "price": 40.00,
+      "description": "Modern LED desk lamp with adjustable brightness and color temperature.",
+      "category": "Home & Office"
+    },
+    {
+      "id": "p-011",
+      "name": "Gaming Mouse - RGB",
+      "price": 55.00,
+      "description": "High-precision gaming mouse with customizable RGB lighting.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-012",
+      "name": "Wireless Keyboard",
+      "price": 70.00,
+      "description": "Ergonomic wireless keyboard with quiet keys.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-013",
+      "name": "External SSD 1TB",
+      "price": 95.00,
+      "description": "Fast and portable 1TB external solid-state drive.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-014",
+      "name": "Bluetooth Speaker - Compact",
+      "price": 65.00,
+      "description": "Portable Bluetooth speaker with powerful sound.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-015",
+      "name": "Digital Camera - Mirrorless",
+      "price": 800.00,
+      "description": "Capture stunning photos and videos with this mirrorless digital camera.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-016",
+      "name": "Hiking Boots - Waterproof",
+      "price": 110.00,
+      "description": "Durable waterproof hiking boots for challenging trails.",
+      "category": "Footwear"
+    },
+    {
+      "id": "p-017",
+      "name": "Casual Sneakers - White",
+      "price": 50.00,
+      "description": "Classic white casual sneakers for everyday style.",
+      "category": "Footwear"
+    },
+    {
+      "id": "p-018",
+      "name": "Dress Shirt - Slim Fit",
+      "price": 40.00,
+      "description": "Crisp white slim fit dress shirt.",
+      "category": "Clothing"
+    },
+    {
+      "id": "p-019",
+      "name": "Wool Sweater - Grey",
+      "price": 60.00,
+      "description": "Warm grey wool sweater.",
+      "category": "Clothing"
+    },
+    {
+      "id": "p-020",
+      "name": "Beanie Hat - Black",
+      "price": 15.00,
+      "description": "Simple black knit beanie hat.",
+      "category": "Accessories"
+    },
+      {
+      "id": "p-021",
+      "name": "Sunglasses - Aviator Style",
+      "price": 28.00,
+      "description": "Classic aviator style sunglasses with UV protection.",
+      "category": "Accessories"
+    },
+    {
+      "id": "p-022",
+      "name": "Backpack - Laptop Compartment",
+      "price": 55.00,
+      "description": "Spacious backpack with a padded compartment for laptops up to 15 inches.",
+      "category": "Accessories"
+    },
+    {
+      "id": "p-023",
+      "name": "Bluetooth Earbuds",
+      "price": 85.00,
+      "description": "True wireless Bluetooth earbuds with charging case.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-024",
+      "name": "Tablet - 10 inch",
+      "price": 250.00,
+      "description": "Versatile 10-inch tablet for Browse, streaming, and apps.",
+      "category": "Electronics"
+    },
+    {
+      "id": "p-025",
+      "name": "Smart Plug - Wi-Fi Enabled",
+      "price": 19.00,
+      "description": "Control your appliances remotely with this smart plug.",
+      "category": "Smart Home"
+    },
+    {
+      "id": "p-026",
+      "name": "Smart Light Bulb - Color Changing",
+      "price": 22.00,
+      "description": "Customize the ambiance with this color-changing smart light bulb.",
+      "category": "Smart Home"
+    },
+    {
+      "id": "p-027",
+      "name": "Robot Vacuum Cleaner",
+      "price": 300.00,
+      "description": "Automated vacuum cleaner for effortless cleaning.",
+      "category": "Smart Home"
+    },
+    {
+      "id": "p-028",
+      "name": "Cookbook - Italian Cuisine",
+      "price": 20.00,
+      "description": "Learn to cook authentic Italian dishes with this comprehensive cookbook.",
+      "category": "Books"
+    },
+    {
+      "id": "p-029",
+      "name": "Sci-Fi Paperback",
+      "price": 12.00,
+      "description": "Engrossing science fiction novel.",
+      "category": "Books"
+    },
+    {
+      "id": "p-030",
+      "name": "Gardening Gloves",
+      "price": 10.00,
+      "description": "Durable gardening gloves for protection.",
+      "category": "Garden & Outdoor"
+    },
+      {
+      "id": "p-031",
+      "name": "Sun Hat - Wide Brim",
+      "price": 18.00,
+      "description": "Protect yourself from the sun with this stylish wide-brim hat.",
+      "category": "Garden & Outdoor"
+    },
+    {
+      "id": "p-032",
+      "name": "Electric Drill",
+      "price": 75.00,
+      "description": "Cordless electric drill for DIY projects.",
+      "category": "Tools"
+    },
+    {
+      "id": "p-033",
+      "name": "Toolbox - Metal",
+      "price": 30.00,
+      "description": "Sturdy metal toolbox for organizing tools.",
+      "category": "Tools"
+    },
+    {
+      "id": "p-034",
+      "name": "Office Chair - Ergonomic",
+      "price": 180.00,
+      "description": "Comfortable ergonomic office chair for long work hours.",
+      "category": "Home & Office"
+    },
+    {
+      "id": "p-035",
+      "name": "Desk Organizer",
+      "price": 25.00,
+      "description": "Keep your desk tidy with this multi-compartment organizer.",
+      "category": "Home & Office"
+    },
+    {
+      "id": "p-036",
+      "name": "Throw Pillow - Decorative",
+      "price": 20.00,
+      "description": "Soft decorative throw pillow for your sofa.",
+      "category": "Home Decor"
+    },
+    {
+      "id": "p-037",
+      "name": "Vase - Ceramic",
+      "price": 35.00,
+      "description": "Elegant ceramic vase for flowers.",
+      "category": "Home Decor"
+    },
+    {
+      "id": "p-038",
+      "name": "Wall Art - Abstract",
+      "price": 60.00,
+      "description": "Modern abstract wall art to brighten your room.",
+      "category": "Home Decor"
+    },
+    {
+      "id": "p-039",
+      "name": "Coffee Maker - Drip",
+      "price": 50.00,
+      "description": "Classic drip coffee maker.",
+      "category": "Kitchen Appliances"
+    },
+    {
+      "id": "p-040",
+      "name": "Toaster - 2 Slice",
+      "price": 30.00,
+      "description": "Compact 2-slice toaster.",
+      "category": "Kitchen Appliances"
+    },
+      {
+      "id": "p-041",
+      "name": "Blender - High Speed",
+      "price": 90.00,
+      "description": "Powerful high-speed blender for smoothies and soups.",
+      "category": "Kitchen Appliances"
+    },
+    {
+      "id": "p-042",
+      "name": "Dinner Plate Set (4)",
+      "price": 45.00,
+      "description": "Set of 4 ceramic dinner plates.",
+      "category": "Dinnerware"
+    },
+    {
+      "id": "p-043",
+      "name": "Mug Set (6)",
+      "price": 30.00,
+      "description": "Set of 6 ceramic mugs.",
+      "category": "Dinnerware"
+    },
+    {
+      "id": "p-044",
+      "name": "Frying Pan - Non-Stick",
+      "price": 40.00,
+      "description": "Medium-sized non-stick frying pan.",
+      "category": "Cookware"
+    },
+    {
+      "id": "p-045",
+      "name": "Saucepan with Lid",
+      "price": 35.00,
+      "description": "Small saucepan with a glass lid.",
+      "category": "Cookware"
+    },
+    {
+      "id": "p-046",
+      "name": "Knife Set with Block",
+      "price": 120.00,
+      "description": "Complete knife set with a wooden block.",
+      "category": "Cutlery"
+    },
+    {
+      "id": "p-047",
+      "name": "Cutting Board - Bamboo",
+      "price": 22.00,
+      "description": "Durable and eco-friendly bamboo cutting board.",
+      "category": "Kitchen Utensils"
+    },
+    {
+      "id": "p-048",
+      "name": "Spaghetti Server",
+      "price": 8.00,
+      "description": "Stainless steel spaghetti server.",
+      "category": "Kitchen Utensils"
+    },
+    {
+      "id": "p-049",
+      "name": "Trash Can - Stainless Steel",
+      "price": 50.00,
+      "description": "Medium-sized stainless steel trash can for the kitchen.",
+      "category": "Home & Kitchen"
+    },
+    {
+      "id": "p-050",
+      "name": "Laundry Basket - Hamper Style",
+      "price": 30.00,
+      "description": "Folding laundry basket with a lid.",
+      "category": "Home & Storage"
+    },
+      {
+      "id": "p-051",
+      "name": "Storage Containers - Set of 5",
+      "price": 25.00,
+      "description": "A set of 5 food storage containers with lids.",
+      "category": "Home & Storage"
+    },
+    {
+      "id": "p-052",
+      "name": "Bath Towel Set (2)",
+      "price": 35.00,
+      "description": "Set of two soft cotton bath towels.",
+      "category": "Bathroom"
+    },
+    {
+      "id": "p-053",
+      "name": "Shower Curtain - Fabric",
+      "price": 28.00,
+      "description": "Water-repellent fabric shower curtain.",
+      "category": "Bathroom"
+    },
+    {
+      "id": "p-054",
+      "name": "Bath Mat - Non-Slip",
+      "price": 15.00,
+      "description": "Non-slip bath mat for safety.",
+      "category": "Bathroom"
+    },
+    {
+      "id": "p-055",
+      "name": "Bed Sheet Set - Queen",
+      "price": 55.00,
+      "description": "Soft microfiber queen size bed sheet set.",
+      "category": "Bedding"
+    },
+    {
+      "id": "p-056",
+      "name": "Pillow Pair - Standard",
+      "price": 40.00,
+      "description": "Set of two standard size bed pillows.",
+      "category": "Bedding"
+    },
+    {
+      "id": "p-057",
+      "name": "Duvet Insert - Queen",
+      "price": 80.00,
+      "description": "Warm and comfortable duvet insert for queen size beds.",
+      "category": "Bedding"
+    },
+    {
+      "id": "p-058",
+      "name": "Table Lamp - Modern",
+      "price": 45.00,
+      "description": "Modern table lamp with a fabric shade.",
+      "category": "Lighting"
+    },
+    {
+      "id": "p-059",
+      "name": "Floor Lamp - Arc Style",
+      "price": 90.00,
+      "description": "Stylish arc-style floor lamp.",
+      "category": "Lighting"
+    },
+    {
+      "id": "p-060",
+      "name": "Picture Frame - 8x10",
+      "price": 12.00,
+      "description": "Simple 8x10 inch picture frame.",
+      "category": "Home Decor"
+    },
+      {
+      "id": "p-061",
+      "name": "Artificial Plant - Small Potted",
+      "price": 20.00,
+      "description": "Realistic small artificial potted plant.",
+      "category": "Home Decor"
+    },
+    {
+      "id": "p-062",
+      "name": "Area Rug - 5x8 ft",
+      "price": 150.00,
+      "description": "Soft area rug for living room or bedroom.",
+      "category": "Rugs"
+    },
+    {
+      "id": "p-063",
+      "name": "Curtain Panels (Set of 2)",
+      "price": 40.00,
+      "description": "Set of two blackout curtain panels.",
+      "category": "Window Treatments"
+    },
+    {
+      "id": "p-064",
+      "name": "Blinds - Faux Wood",
+      "price": 70.00,
+      "description": "Faux wood blinds for window treatments.",
+      "category": "Window Treatments"
+    },
+    {
+      "id": "p-065",
+      "name": "Vacuum Cleaner - Upright",
+      "price": 120.00,
+      "description": "Powerful upright vacuum cleaner.",
+      "category": "Cleaning Supplies"
+    },
+    {
+      "id": "p-066",
+      "name": "Mop and Bucket Set",
+      "price": 35.00,
+      "description": "Easy-to-use mop and bucket set.",
+      "category": "Cleaning Supplies"
+    },
+    {
+      "id": "p-067",
+      "name": "Cleaning Spray - All Purpose",
+      "price": 8.00,
+      "description": "Eco-friendly all-purpose cleaning spray.",
+      "category": "Cleaning Supplies"
+    },
+    {
+      "id": "p-068",
+      "name": "Toilet Brush and Holder",
+      "price": 15.00,
+      "description": "Simple toilet brush and holder set.",
+      "category": "Bathroom Accessories"
+    },
+    {
+      "id": "p-069",
+      "name": "Soap Dispenser",
+      "price": 18.00,
+      "description": "Countertop soap dispenser.",
+      "category": "Bathroom Accessories"
+    },
+    {
+      "id": "p-070",
+      "name": "Toothbrush Holder",
+      "price": 10.00,
+      "description": "Simple toothbrush holder for the bathroom counter.",
+      "category": "Bathroom Accessories"
+    },
+      {
+      "id": "p-071",
+      "name": "Hair Dryer",
+      "price": 40.00,
+      "description": "Compact and powerful hair dryer.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-072",
+      "name": "Electric Shaver",
+      "price": 60.00,
+      "description": "Rechargeable electric shaver for men.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-073",
+      "name": "Digital Bathroom Scale",
+      "price": 25.00,
+      "description": "Accurate digital bathroom scale.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-074",
+      "name": "Fitness Tracker Band",
+      "price": 50.00,
+      "description": "Simple fitness tracker band for tracking activity.",
+      "category": "Fitness"
+    },
+    {
+      "id": "p-075",
+      "name": "Dumbbell Set (Pairs) - 5 lbs",
+      "price": 30.00,
+      "description": "Pair of 5-pound dumbbells.",
+      "category": "Fitness"
+    },
+    {
+      "id": "p-076",
+      "name": "Resistance Bands - Set of 3",
+      "price": 20.00,
+      "description": "Set of 3 resistance bands with different tension levels.",
+      "category": "Fitness"
+    },
+    {
+      "id": "p-077",
+      "name": "Basketball",
+      "price": 25.00,
+      "description": "Standard size basketball.",
+      "category": "Sports"
+    },
+    {
+      "id": "p-078",
+      "name": "Soccer Ball",
+      "price": 20.00,
+      "description": "Standard size soccer ball.",
+      "category": "Sports"
+    },
+    {
+      "id": "p-079",
+      "name": "Tennis Racket",
+      "price": 40.00,
+      "description": "Beginner tennis racket.",
+      "category": "Sports"
+    },
+    {
+      "id": "p-080",
+      "name": "Yoga Block",
+      "price": 10.00,
+      "description": "Foam yoga block for support.",
+      "category": "Fitness"
+    },
+      {
+      "id": "p-081",
+      "name": "Cycling Helmet",
+      "price": 45.00,
+      "description": "Adjustable cycling helmet for safety.",
+      "category": "Sports"
+    },
+    {
+      "id": "p-082",
+      "name": "Ski Goggles",
+      "price": 55.00,
+      "description": "Anti-fog ski goggles.",
+      "category": "Sports"
+    },
+    {
+      "id": "p-083",
+      "name": "Swimsuit - One Piece",
+      "price": 35.00,
+      "description": "Classic black one-piece swimsuit.",
+      "category": "Clothing"
+    },
+    {
+      "id": "p-084",
+      "name": "Beach Towel",
+      "price": 20.00,
+      "description": "Large striped beach towel.",
+      "category": "Home & Outdoor"
+    },
+    {
+      "id": "p-085",
+      "name": "Sunscreen - SPF 50",
+      "price": 15.00,
+      "description": "High SPF sunscreen for sun protection.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-086",
+      "name": "After Sun Lotion",
+      "price": 12.00,
+      "description": "Soothing after sun lotion.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-087",
+      "name": "Picnic Blanket",
+      "price": 30.00,
+      "description": "Waterproof picnic blanket.",
+      "category": "Garden & Outdoor"
+    },
+    {
+      "id": "p-088",
+      "name": "Camping Tent - 2 Person",
+      "price": 100.00,
+      "description": "Easy setup 2-person camping tent.",
+      "category": "Garden & Outdoor"
+    },
+    {
+      "id": "p-089",
+      "name": "Sleeping Bag - 3 Season",
+      "price": 70.00,
+      "description": "Comfortable 3-season sleeping bag.",
+      "category": "Garden & Outdoor"
+    },
+    {
+      "id": "p-090",
+      "name": "Headlamp - LED",
+      "price": 25.00,
+      "description": "Bright LED headlamp for camping or hiking.",
+      "category": "Garden & Outdoor"
+    },
+      {
+      "id": "p-091",
+      "name": "Backpack - Hiking 40L",
+      "price": 80.00,
+      "description": "40L hiking backpack with multiple compartments.",
+      "category": "Garden & Outdoor"
+    },
+    {
+      "id": "p-092",
+      "name": "Water Filter Bottle",
+      "price": 35.00,
+      "description": "Reusable water bottle with built-in filter.",
+      "category": "Garden & Outdoor"
+    },
+    {
+      "id": "p-093",
+      "name": "Navigation Compass",
+      "price": 15.00,
+      "description": "Reliable navigation compass.",
+      "category": "Garden & Outdoor"
+    },
+    {
+      "id": "p-094",
+      "name": "First Aid Kit - Compact",
+      "price": 20.00,
+      "description": "Compact first aid kit for minor injuries.",
+      "category": "Health"
+    },
+    {
+      "id": "p-095",
+      "name": "Pain Reliever - 100 tablets",
+      "price": 10.00,
+      "description": "Over-the-counter pain reliever.",
+      "category": "Health"
+    },
+    {
+      "id": "p-096",
+      "name": "Bandages - Assorted Pack",
+      "price": 5.00,
+      "description": "Assorted sizes of adhesive bandages.",
+      "category": "Health"
+    },
+    {
+      "id": "p-097",
+      "name": "Electric Toothbrush",
+      "price": 50.00,
+      "description": "Rechargeable electric toothbrush.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-098",
+      "name": "Mouthwash - Fresh Mint",
+      "price": 8.00,
+      "description": "Alcohol-free fresh mint mouthwash.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-099",
+      "name": "Dental Floss - Waxed",
+      "price": 4.00,
+      "description": "Waxed dental floss.",
+      "category": "Personal Care"
+    },
+    {
+      "id": "p-100",
+      "name": "Hand Sanitizer - Travel Size",
+      "price": 3.00,
+      "description": "Small travel size hand sanitizer.",
+      "category": "Health"
+    },
+     {
+      "id": "p-101",
+      "name": "Vitamin C Supplements - 90 count",
+      "price": 15.00,
+      "description": "Vitamin C dietary supplements.",
+      "category": "Health"
+    },
+    {
+      "id": "p-102",
+      "name": "Protein Powder - Vanilla",
+      "price": 30.00,
+      "description": "Vanilla flavored whey protein powder.",
+      "category": "Fitness Supplements"
+    }
+  ]
