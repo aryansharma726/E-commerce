@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shopping Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        /* Styles for the pop-up chatbox */
+        main {
+            margin-left: 250px; /* Match sidebar width */
+            padding-left: 20px; /* Add some padding */
+        }
+
+       .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 400px;
+            max-height: 80vh;
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            display: none;
+            flex-direction: column;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform: translateY(100%);
+            opacity: 0;
+            border: 1px solid #444477;
+            cursor: move;
+            z-index: 1001;
+            resize: both; /* Enable resizing */
+            min-width: 300px;  /* Set minimum width */
+            min-height: 200px; /* Set minimum height */
+        }
+
+        .chat-container.show {
+            display: flex;
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .chat-header {
+            background: linear-gradient(90deg, #663399, #3366cc);
+            color: #e9e9f4;
+            padding: 15px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            cursor: grab;/* Ensure header still indicates it's draggable */
+        }
+
+        .chat-header:active {
+            cursor: grabbing;
+        }
+
+        .chat-body {
+            padding: 15px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            clear: both;
+            word-wrap: break-word;
+        }
+
+        .user-message {
+            background-color: #0d4f1c;
+            color: #e9e9f4;
+            align-self: flex-end;
+            float: right;
+        }
+        
+
+        .ai-message {
+            background-color: #1d1573;
+            color: #e9e9f4;
+            align-self: flex-start;
+            float: left;
+        }
+
+        .input-area {
+            padding: 10px;
+            border-top: 1px solid #444477;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .input-area input {
+            flex-grow: 1;
+            padding: 12px;
+            border: 1px solid #444477;
+            border-radius: 5px;
+            background-color: #1a1a2e;
+            color: #e9e9f4;
+            font-size: 1em;
+            outline: none;
+        }
+
+        .input-area button {
+            padding: 12px 25px;
+            background-color: #b388ff;
+            color: #1a1a2e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .input-area button:hover {
+            background-color: #9966ff;
+        }
+
+        /* Event Log Styles */
+        #eventLog {
+            position: fixed;
+            top: 0; /* Stick to the top */
+            left: 0; /* Stick to the left */
+            width: 250px; /* Adjust width as needed */
+            height: 100%; /* Full height */
+            overflow-y: auto;
+            border-right: 1px solid #444477; /* Right border */
+            padding: 1rem;
+            background-color: #1a1a2e;
+            color: #e9e9f4;
+            font-size: 0.9em;
+            z-index: 1000; /* Ensure it's above other content */
+            transition: none; /* Remove transition */
+            transform: none; /* Remove transform */
+            opacity: 1; /* Always visible */
+            display: block; /* Always visible */
+            resize: vertical; /* Allow vertical resizing only */
+            min-height: 150px; /* Minimum height */
+        }
+
+        
+
+        .event-log-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #b388ff;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #444477;
+        }
+
+        .event-item {
+            margin-bottom: 0.75rem;
+            padding: 0.75rem;
+            border-radius: 5px;
+            background-color: #2a2a4a;
+            border: 1px solid #444477;
+            word-wrap: break-word;
+            line-height: 1.4;
+        }
+        
+        * Keep the event log specific styles */
+        .event-message-content-wrapper {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .event-message-content-wrapper .event-message {
+            margin-bottom: 0;
+            display: inline;
+        }
+
+        .user-event {
+            background-color: #0d4f1c;
+            border-left: 4px solid #16a34a;
+            color: #e9e9f4;
+        }
+
+        .agent-event {
+            background-color: #1d1573;
+            border-left: 4px solid #fcd34d;
+            color: #e9e9f4;
+        }
+
+        .system-event {
+            background-color: #2a2a4a;
+            border-left: 4px solid #60a5fa;
+            color: #e9e9f4;
+        }
+
+        .event-title {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+            color: #b388ff;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1><a href="/">AI Shopping Assistant</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-button" data-action="search">Search Products</a></li>
+                        <li><a href="#" class="nav-button" data-action="status">Check Order Status</a></li>
+                        <li><a href="#" class="nav-button" data-action="order">Place Order</a></li>
+                        <li><a href="#" class="nav-button" data-action="cancel">Cancel Order</a></li>
+                        <li><a href="#" class="nav-button" data-action="list_orders">List All Orders</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h2>Your Smart E-commerce Concierge</h2>
+                <p>I am an AI assistant designed to help you with your online shopping.</p>
+                <p>What Are My Capabilities:</p>
+                <ul>
+                    <li><strong>Search for Products:</strong> Ask me to find items like "blue t-shirts" or "running shoes".</li>
+                    <li><strong>Check Order Status:</strong> Provide an order ID, and I'll look up its status (e.g., "Where is order 12345?").</li>
+                    <li><strong>Place Orders:</strong> Tell me which product ID and quantity you'd like to order (e.g., "Order 2 of product P101").</li>
+                    <li><strong>Cancel Orders:</strong> Provide an order ID to cancel it (e.g., "Cancel order 67890").</li>
+                    <li><strong>List All Orders:</strong> Ask me to show you a list of all your past orders.</li>
+                    <li><strong>Offer Greetings:</strong> Say hello!</li>
+                    <li><strong>Handle Farewells:</strong> Say goodbye!</li>
+                    <li>For anything else, I'll let you know what I can do.</li>
+                </ul>
+                <p>Ask me a question or use the buttons above!</p>
+            </div>
+        </section>
+
+        <section class="about-agents-section">
+            <div class="container">
+                <h3>How I Work: A Team of Agents</h3>
+                <p>I work with a team of specialized AI agents:</p>
+                <ul>
+                    <li><strong>Orchestrator Agent:</strong> Understands your request and routes it to the right specialist.</li>
+                    <li><strong>Product Search Agent:</strong> Uses a catalog to find products.</li>
+                    <li><strong>Order Status Agent:</strong> Checks your order details (including price and total).</li>
+                    <li><strong>Ordering Agent:</strong> Manages placing new orders (tracking price at the time of order and the order total).</li>
+                    <li><strong>Order Cancellation Agent:</strong> Manages cancelling or removing existing orders.</li>
+                    <li><strong>List Orders Agent:</strong> Fetches and displays a list of all your orders.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 AI Shopping Assistant. All rights reserved.</p>
+        </div>
+    </footer>
+
+     <div class="chat-container" id="chatBox">
+        <div class="chat-header" id="chatHeader">
+            AI Shopping Assistant
+        </div>
+        <div class="chat-body" id="chat-box"> </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message..."> <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <div class="event-log-container" id="eventLog">
+        <h2 class="event-log-title">Event Log</h2>
+        <div id="event-log-content" class="space-y-3">
+            </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

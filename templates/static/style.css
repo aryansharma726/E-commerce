@@ -1,0 +1,446 @@
+/* Basic Reset or Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Or your preferred modern font */
+    line-height: 1.6;
+    background-color: #1a1a2e; /* Dark background color */
+    color: #e9e9f4; /* Light text color */
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column; /* Allows footer to stick to bottom */
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+/* Header Styling - Updated for Gradient Background and Layout */
+.site-header {
+    /* Use a gradient background similar to the image */
+    background: linear-gradient(90deg, #663399, #3366cc); /* Example purple to blue gradient */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Stronger subtle shadow for contrast */
+    text-align: center; /* Center text content horizontally */
+}
+
+.site-header .container {
+    display: flex;
+    flex-direction: column; /* Stack title and nav vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between title and nav */
+}
+
+.site-header h1 {
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Allow title to take full width */
+}
+
+.site-header h1 a {
+    color: #e9e9f4; /* Keep the original color */
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Style for the site title link on hover */
+.site-header h1 a:hover {
+    transform: scale(1.1);
+    text-shadow:
+        0 0 8px #b388ff,
+        0 0 15px #b388ff,
+        0 0 25px #b388ff;
+    color: #ffffff;
+}
+
+/* Navigation Styling - Updated for Transparent Fading Links */
+nav {
+    width: 100%; /* Allow nav to take full width within container */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex; /* Arrange links horizontally */
+    justify-content: center; /* Center links within the nav */
+    gap: 30px; /* Space between nav items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+nav ul li {
+    margin: 0; /* Remove any residual margin from previous li styles */
+}
+
+.nav-button {
+    /* Remove button-like styling */
+    background: none;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+
+    /* Style as text link */
+    color: rgba(255, 255, 255, 0.6); /* White text with partial transparency */
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: normal; /* Regular font weight */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    cursor: pointer;
+    display: inline-block; /* Ensure link is treated as block/inline-block */
+}
+
+.nav-button:hover {
+    color: #ffffff; /* White text on hover (no transparency) */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+/* Main Content Sections */
+main {
+    flex-grow: 1;       /* Allows main content to take up available space */
+    margin-left: 250px; /* Match sidebar width */
+    padding-left: 20px; /* Add some padding */ 
+}
+
+section {
+    padding: 60px 0; /* Vertical padding for sections */
+    /* Removed background/border from base section, style specific sections below */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(45deg, #1a1a2e, #2a004a); /* Gradient background */
+    color: #fff; /* White text on dark gradient */
+    text-align: center;
+    padding: 80px 0;
+    border-bottom: 1px solid #444477; /* Separator */
+}
+
+.hero-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #b388ff; /* Accent color */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for readability on gradient */
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ccc; /* Lighter color for body text */
+}
+
+.hero-section ul {
+    list-style: none; /* Remove bullets */
+    margin-top: 30px; /* More space above list */
+    padding: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.hero-section ul li {
+    background-color: #33335a; /* Darker background for list items */
+    padding: 12px; /* More padding */
+    margin-bottom: 10px; /* More space between items */
+    border-radius: 5px;
+    border-left: 4px solid #b388ff; /* Thicker accent border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.hero-section ul li strong {
+    color: #9966ff; /* Highlight keywords */
+}
+
+
+/* About Agents Section */
+.about-agents-section {
+    background-color: #21213a; /* Another dark shade */
+    color: #e9e9f4;
+    padding: 40px 0; /* Slightly less padding */
+    border-bottom: 1px solid #444477; /* Separator */
+    text-align: center;
+}
+
+.about-agents-section h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #b388ff; /* Accent color */
+}
+
+.about-agents-section p {
+     font-size: 1em;
+     margin-bottom: 20px;
+     max-width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+}
+
+.about-agents-section ul {
+    list-style: none; /* Remove bullets */
+    margin-top: 20px;
+    padding: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.about-agents-section ul li {
+     background-color: #3a3a5a; /* Darker background for list items */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-left: 3px solid #b388ff; /* Accent border */
+}
+
+.about-agents-section ul li strong {
+     color: #9966ff; /* Highlight agent names */
+}
+
+
+/* Chat Interface Section */
+.chat-interface-section {
+    background-color: #2a2a4a; /* Background for the chat section */
+    padding: 40px 0;
+}
+
+.chat-interface-section h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #b388ff; /* Accent color */
+}
+
+/* Chatbox Styling - Using correct ID */
+#chat-box {
+    height: 450px; /* Slightly increased height */
+    overflow-y: auto; /* Scrollable */
+    border: 1px solid #444477; /* Border color */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #1a1a2e; /* Background matching body */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3); /* Inner shadow */
+}
+
+/* Style for individual messages - Using .message.sender classes */
+.message { /* Base message style */
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 85%; /* Increased max width slightly */
+    word-wrap: break-word; /* Break long words */
+    line-height: 1.5;
+}
+.message table.orders-table {
+    width: 100%; /* Make table take full width of message bubble */
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 10px; /* Space above the table */
+    background-color: #33335a; /* Dark background for table */
+    color: #e9e9f4; /* Light text */
+    font-size: 0.9em; /* Smaller font for table data */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 5px; /* Match message bubble border-radius */
+    overflow: hidden; /* Ensures border-radius clips content */
+}
+
+.message table.orders-table th,
+.message table.orders-table td {
+    border: 1px solid #444477; /* Border color for cells */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+.message table.orders-table th {
+    background-color: #4a4a7a; /* Slightly different background for header */
+    font-weight: bold;
+}
+
+/* Style for alternating rows (optional) */
+.message table.orders-table tbody tr:nth-child(odd) {
+    background-color: #3a3a6a; /* Alternate row color */
+}
+
+/* Remove default margin-bottom from the last table row to fit in bubble */
+.message table.orders-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Ensure the table doesn't cause overflow if content is too wide */
+.message table.orders-table {
+    table-layout: auto; /* Allow columns to size automatically */
+    word-break: break-word; /* Break long words */
+}
+
+/* Specific styling for user and agent messages */
+.message.user { /* Target user messages with both classes */
+    align-self: flex-end; /* Align user messages to the right */
+    background-color: #0d4f1c; /* User message background (Darker green) */
+    color: #e9e9f4;
+    border-bottom-right-radius: 2px; /* Add slight radius variation */
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.message.agent { /* Target agent messages with both classes */
+    align-self: flex-start; /* Align agent messages to the left */
+    background-color: #1d1573; /* Agent message background (Darker blue/purple) */
+    color: #e9e9f4;
+    border-bottom-left-radius: 2px; /* Add slight radius variation */
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+/* Input Area Styling */
+.input-area {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    align-items: center; /* Vertically align input and button */
+}
+
+#user-input { /* Use the correct ID */
+    flex-grow: 1; /* Input takes up most space */
+    padding: 12px;
+    border: 1px solid #444477;
+    border-radius: 5px;
+    background-color: #1a1a2e;
+    color: #e9e9f4;
+    font-size: 1em;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#user-input:focus {
+    border-color: #b388ff; /* Accent color on focus */
+    box-shadow: 0 0 8px rgba(179, 136, 255, 0.5); /* Glow effect on focus */
+}
+
+#user-input::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+
+/* Send Button Styling */
+#send-button { /* Use the correct ID */
+    padding: 12px 25px;
+    background-color: #b388ff; /* Accent color for button */
+    color: #1a1a2e; /* Dark text on button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transitions for smooth effect */
+    min-width: 120px; /* Ensure minimum width */
+    display: inline-block;
+}
+
+#send-button:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow:
+        0 0 8px #b388ff, /* Glow effect */
+        0 0 15px #b388ff;
+    background-color: #9966ff; /* Darker accent on hover */
+}
+
+#send-button:disabled {
+     background-color: #555; /* Darker background for disabled */
+    color: #ccc;
+    cursor: not-allowed;
+    transform: scale(1); /* Reset transform */
+    box-shadow: none; /* Remove shadow */
+}
+
+
+/* Footer Styling */
+.site-footer {
+    background-color: #1a1a2e; /* Same as body background */
+    color: #888; /* Lighter grey for footer text */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to bottom if content is short */
+    border-top: 1px solid #444477; /* Separator */
+}
+
+.site-footer p {
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .site-header .container {
+        flex-direction: column; /* Stack header items vertically */
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav buttons vertically on smaller screens */
+        gap: 5px;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+    }
+
+    .nav-button {
+         width: 100%; /* Ensure button takes full width of its li */
+         padding: 10px 0; /* Adjust padding for full width buttons */
+    }
+
+    .hero-section h2 {
+        font-size: 2em;
+    }
+
+    #chat-box { /* Use the correct ID */
+        height: 350px; /* Reduce chatbox height */
+    }
+
+    .message {
+        max-width: 95%; /* Allow messages to take more width */
+    }
+
+    .input-area {
+        flex-direction: column; /* Stack input area items */
+        gap: 10px;
+    }
+
+    #send-button { /* Use the correct ID */
+        width: 100%; /* Make send button full width */
+        min-width: auto; /* Remove min-width restriction */
+    }
+    #eventLog {
+                display: none;
+            }
+    main {
+                margin-left: 0; /* Reset margin */
+                padding-left: 0; /* Reset padding */
+            }
+}
